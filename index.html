@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventures</title>
+    <link rel="icon" type="image/png" href="Ast/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ventures-black': '#000000',
+                        'ventures-white': '#ffffff',
+                        'ventures-gray': '#2a2a2a',
+                        'ventures-accent': '#ffffff',
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .gradient-text {
+            background: linear-gradient(to right, #ffffff, #2a2a2a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        img.glow:hover {
+            box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+        }
+
+        .hover-animation {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-animation:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px 5px rgba(156, 156, 156, 0.7); /* White glow effect */
+    }
+    </style>
+</head>
+<body class="bg-ventures-black font-['Inter'] antialiased">
+    <!-- header -->
+    <header class="fixed w-full z-50 glass-effect bg-ventures-gray/30 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold gradient-text">Ventures</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#home" class="text-white/70 hover:text-ventures-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="text-white/70 hover:text-ventures-accent transition-colors duration-300">Features</a></li>
+                        <li><a href="#how-it-works" class="text-white/70 hover:text-ventures-accent transition-colors duration-300">How It Works</a></li>
+                        <li><a href="#support" class="text-white/70 hover:text-ventures-accent transition-colors duration-300">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-radial from-ventures-gray to-ventures-black pt-16 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 data-aos="fade-up" data-aos-duration="1000" class="text-6xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">Unlock Your
+                <br />
+                Roblox Experience</span>
+            </h2>
+            <img src="Ast/preview.png" alt="preview" class="hover-animation w-100 rounded-lg">
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features" class="py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-ventures-black via-ventures-gray to-ventures-black opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <h2 data-aos="fade-up" class="text-4xl md:text-5xl font-bold text-center mb-20">
+                <span class="gradient-text">Features</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- cards -->
+                <div data-aos="fade-up" data-aos-delay="100" class="group">
+                    <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-ventures-accent/50 transition-all duration-500 hover:transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-ventures-accent">Speed</h3>
+                        <p class="text-white/60">Execute scripts faster than ever before with our optimized engine.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="group">
+                    <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-ventures-accent/50 transition-all duration-500 hover:transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-ventures-accent">Stability</h3>
+                        <p class="text-white/60">Say goodbye to crashes and errors with our robust architecture.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="group">
+                    <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-ventures-accent/50 transition-all duration-500 hover:transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-ventures-accent">User-Friendly</h3>
+                        <p class="text-white/60">Designed with you in mind for seamless navigation and usage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- how section -->
+        <section id="how-it-works" class="py-32 relative overflow-hidden bg-ventures-black">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 data-aos="fade-up" class="text-4xl md:text-5xl font-bold text-center mb-20">
+                    <span class="gradient-text">How It Works</span>
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- cards -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="group">
+                        <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-ventures-accent/50 transition-all duration-500 hover:transform hover:-translate-y-2">
+                            <h3 class="text-2xl font-semibold mb-4 text-ventures-accent">Download</h3>
+                            <p class="text-white/60">Download and install Ventures</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="group">
+                        <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-ventures-accent/50 transition-all duration-500 hover:transform hover:-translate-y-2">
+                            <h3 class="text-2xl font-semibold mb-4 text-ventures-accent">Load</h3>
+                            <p class="text-white/60">Load your favorite scripts.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300" class="group">
+                        <div class="p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-ventures-accent/50 transition-all duration-500 hover:transform hover:-translate-y-2">
+                            <h3 class="text-2xl font-semibold mb-4 text-ventures-accent">Execute</h3>
+                            <p class="text-white/60">Execute and enjoy!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- support -->
+        <section id="support" class="py-12 border-t border-white/5 bg-ventures-black">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 data-aos="fade-up" class="text-4xl md:text-5xl font-bold mb-8">
+                    <span class="gradient-text">Ventures.</span>
+                </h2>
+                </p>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <a href="https://discord.gg/v3n" class="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-ventures-gray to-ventures-accent text-white font-semibold hover:opacity-90 transition-all duration-300 transform hover:scale-105">
+                        Download Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- support -->
+        section id="support" class="py-12 border-t border-white/5 bg-ventures-black">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 data-aos="fade-up" class="text-4xl md:text-5xl font-bold mb-8">
+                <span class="gradient-text">Support</span>
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="text-xl text-ventures-white/60 mb-8">
+                Need help? We're here for you 24/7.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="200" class="mb-8">
+                <a href="https://discord.gg/v3n" class="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-ventures-gray to-ventures-accent text-white font-semibold hover:opacity-90 transition-all duration-300 transform hover:scale-105">
+                    Contact Support
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-ventures-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white/40">&copy; 2025 Ventures. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#legal" class="text-white/40 hover:text-ventures-accent transition-colors duration-300">Terms of Service</a>
+                    <a href="#legal" class="text-white/40 hover:text-ventures-accent transition-colors duration-300">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100,
+                easing: 'ease-out-cubic'
+            });
+        });
+    </script>
+</body>
+</html>
